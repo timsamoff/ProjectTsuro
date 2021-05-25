@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Generator : MonoBehaviour
 {
@@ -12,15 +13,15 @@ public class Generator : MonoBehaviour
     [Tooltip("Increase this number above 1 for gaps between tiles.")]
     [SerializeField] float tileSize = 1;
 
+    [Tooltip("How much would you like the tiles to rotate?")]
+    [SerializeField] float rotationAngle = 90;
+
     [Tooltip("Populate with all the prefabs used to generate map.")]
     [SerializeField] GameObject[] prefabTiles;
 
     // A list of all map tiles
     List<GameObject> mapList = new List<GameObject>();
 
-    private float rotationAngle = 90f;
-
-    // Start is called before the first frame update
     void Start()
     {
         GenerateGrid();
@@ -34,15 +35,11 @@ public class Generator : MonoBehaviour
         {
             for (int col = 0; col < cols; col++)
             {
-                
-
                 int n = Random.Range(0, prefabTiles.Length);
                 GameObject thePrefab = prefabTiles[n];
 
                 GameObject tile = Instantiate(thePrefab, transform);
                 tile.name = "Tile_" + col + "_" + row;
-
-                //GameObject tile = (GameObject)Instantiate(referenceTile, transform);
 
                 float posX = col * tileSize;
                 float posY = row * -tileSize;
@@ -66,9 +63,11 @@ public class Generator : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetMouseButtonDown(0))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 }

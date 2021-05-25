@@ -153,11 +153,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rows: 5
-  cols: 8
+  cols: 7
   tileSize: 1
+  rotationAngle: 90
   prefabTiles:
-  - {fileID: 7885345869208539596, guid: 2aa3c3a896cb6fa4ba1e3706c816f9ae, type: 3}
-  - {fileID: 4865144300924349092, guid: 25aa187ddf8d3d34f861040eaf4bf2a6, type: 3}
+  - {fileID: 827361466749125372, guid: 2aa3c3a896cb6fa4ba1e3706c816f9ae, type: 3}
+  - {fileID: 806918818194872994, guid: 25aa187ddf8d3d34f861040eaf4bf2a6, type: 3}
+  - {fileID: 2479752485621132527, guid: ec5a4a3032e448c4986f392a753afde5, type: 3}
+  - {fileID: 8887162181322299753, guid: 744ccb4700814de4db060141a16b57b3, type: 3}
+  - {fileID: 3876335774041057206, guid: d86478d4a5b229a4a86089752ac0eada, type: 3}
+  - {fileID: 7011036324759594512, guid: 33380797ed4ff534fae0af258fef7e8e, type: 3}
+  - {fileID: 8544844588386214727, guid: 33b8cc87209d5694b9c254e7322fadc3, type: 3}
+  - {fileID: 1014736094105158227, guid: 8ee31e3a4eaeb9d4fa716775fd4761a7, type: 3}
+  - {fileID: 3665544570163792478, guid: 6fa1583ef9d4c234898ae0d4b93f7044, type: 3}
+  - {fileID: 5663763036111352734, guid: 8d5326049ef4935479815af4592bba6a, type: 3}
+  - {fileID: 8422936866329331492, guid: 00396702d4545894a8e137a20e6f4e68, type: 3}
+  - {fileID: 753480687861579105, guid: a6b608a86835fa143a535556bd42ca19, type: 3}
+  - {fileID: 310673834206384050, guid: 10b7740d2e4421b4aa749a031eef4aa7, type: 3}
+  - {fileID: 6451239288246313402, guid: e06ef8bfe968d7c459af1be16daae3eb, type: 3}
+  - {fileID: 5883340822612967852, guid: 0237c1baf643fd94f8efcd7d1466b606, type: 3}
+  - {fileID: 2457130280058955293, guid: 4f4eee630f1409949bad67177339caec, type: 3}
+  - {fileID: 3048017676861772746, guid: bea525e2b7cc3e34ab3ccf388d5fda20, type: 3}
+  - {fileID: 7367267904484907879, guid: 7e4ba019f95dc294595304eee5a80657, type: 3}
+  - {fileID: 8656761158466249851, guid: a6cc28876b374b94a848af3d7525827d, type: 3}
+  - {fileID: 7102374965795983365, guid: cbabde35e9831d64eabd7c6ddcf7c268, type: 3}
+  - {fileID: 3271708760617952862, guid: 218e6cafeb98aa54a9084168aa4504df, type: 3}
+  - {fileID: 348703412708311588, guid: 3e751bbf0ef44cc438d419187198b4db, type: 3}
+  - {fileID: 3093295988086321050, guid: ad99ef5d724170b42ba713d7786df435, type: 3}
+  - {fileID: 960835254022072893, guid: 3e34a71d775e93a4d8910aa5ba836f77, type: 3}
+  - {fileID: 7206264767713887755, guid: a2c15a33a5cfb3c4eaa2719dd6853ba6, type: 3}
+  - {fileID: 1785321601944644564, guid: 53756170a6ac5984ea236e80fb1fb0c4, type: 3}
+  - {fileID: 3072678825669596427, guid: 09111a2f7097b4340829396d6166c237, type: 3}
+  - {fileID: 408165203352474393, guid: c3798408c31396549949ae1ab336abf7, type: 3}
+  - {fileID: 5722535318050348829, guid: ef32deffec7b25c4eb019adadc68c4e9, type: 3}
+  - {fileID: 2686288743352167228, guid: cfe143bcc6ff02240a184c49652ab4b2, type: 3}
+  - {fileID: 6462418203908869431, guid: 42b1571d486fba74881870a077681d1a, type: 3}
+  - {fileID: 39722089490380695, guid: b8ea60dc54c5e294cad86fe9513e91f3, type: 3}
+  - {fileID: 9187598151996452907, guid: f1bfa506ee3218945819e838b92719e3, type: 3}
+  - {fileID: 4413138650504014789, guid: 3fd3a8adcdcd06e47b8bb4eb48fbb6d3, type: 3}
+  - {fileID: 8287248017989532136, guid: c02790838a0ef8245b2497dd635abc65, type: 3}
 --- !u!4 &417502420
 Transform:
   m_ObjectHideFlags: 0
@@ -225,7 +259,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2
+  orthographic size: 1.8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

@@ -216,6 +216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 433508781}
   - component: {fileID: 433508780}
+  - component: {fileID: 433508782}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -235,8 +236,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c6a88f32e17ff84fa2819ae22d8615f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 6307565737277228207, guid: a9a1474832826fc488e301faa5b40d5f, type: 3}
   mapColliders: []
+  isCollided: 0
 --- !u!4 &433508781
 Transform:
   m_ObjectHideFlags: 0
@@ -251,6 +252,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &433508782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433508779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28fe812fc5771bb419d258bdaed2394f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerObject: {fileID: 6307565737277228207, guid: a9a1474832826fc488e301faa5b40d5f, type: 3}
+  minX: 0
+  maxX: 1.8
+  minY: 0
+  maxY: 1.8
+  colliders: []
+  waitTime: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,6 +282,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -277,6 +298,20 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89990800f2c4fb9429d7ecbc32c7e540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeDuration: 0.1
+  shakeAmount: 0.05
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0

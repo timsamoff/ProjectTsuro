@@ -2,7 +2,7 @@
 
 A game produced by Tim Samoff.
 
-**Contact:** tim@samoff.edu
+**Contact:** samoff@gmail.com
 
 ## Description
 
